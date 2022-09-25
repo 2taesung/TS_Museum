@@ -11,7 +11,7 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">TS Museum!</a>
+          Welcome to TS Museum!
         </h1>
 
         <div className="grid">
@@ -24,18 +24,12 @@ export default function Home() {
             <a className="card">Dot</a>
           </Link>
         </div>
+        <div className="grid">
+          <Link href="infinitewill">
+            <a className="card">InfiniteWill</a>
+          </Link>
+        </div>
       </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {/* Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" /> */}
-        </a>
-      </footer>
 
       <style jsx>{`
         .container {
@@ -52,25 +46,6 @@ export default function Home() {
           flex: 1;
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
           justify-content: center;
           align-items: center;
         }
