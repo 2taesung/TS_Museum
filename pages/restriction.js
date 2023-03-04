@@ -1,12 +1,11 @@
 import React from "react";
-// import Sketch from "react-p5";
 import dynamic from 'next/dynamic'
-const Sketch = dynamic(() => import('react-p5').then((mod) => mod.default), {
+const Sketch = dynamic(async () => await import('react-p5').then((mod) => mod.default), {
   ssr: false,
 })
-  let x = 50;
-	let y = 50;
-  let frameCount = 0;
+let x = 50;
+let y = 50;
+let frameCount = 0;
 
 export default function restriction() {
 	const setup = (p5, canvasParentRef) => {

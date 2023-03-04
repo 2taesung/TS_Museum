@@ -1,7 +1,7 @@
 import React from "react";
 // import Sketch from "react-p5";
 import dynamic from 'next/dynamic'
-const Sketch = dynamic(() => import('react-p5').then((mod) => mod.default), {
+const Sketch = dynamic(async () => await import('react-p5').then((mod) => mod.default), {
   ssr: false,
 })
 
